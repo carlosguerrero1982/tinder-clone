@@ -1,0 +1,48 @@
+.swipebuttons {
+
+position: fixed;
+bottom: 3vh;
+display: flex;
+width: 100%;
+justify-content: space-evenly;
+
+}
+
+.swipeButtons .MultiIconButton-root{
+
+background-color: white;
+box-shadow: 0px 10px 53px 0px rgba(0, 0, 0, 0.3) !important;
+}
+
+
+.swipebuttons_repeat{
+
+    padding: 3vw !important;
+    color: yellow !important;
+}
+
+
+.swipebuttons_left{
+    
+    padding: 3vw !important;
+    color: red !important;
+}
+
+
+.swipebuttons_star{
+    padding: 3vw !important;
+    color: blue !important;
+}
+
+
+.swipebuttons_right{
+    padding: 3vw !important;
+    color: green !important;
+}
+
+
+.swipeButtons_lightning{
+    padding: 3vw !important;
+    color: violet !important;
+    
+}
