@@ -43,7 +43,7 @@ import TinderCard from 'react-tinder-card';
                     >
 
                     <div 
-                    style={{ backgroundImage: "url(" + person.url + ")" }}
+                    style={{ backgroundImage: "url(" + person.imgUrl + ")" }}
 
                     className="card"
 
