@@ -7,21 +7,14 @@ import TinderCard from 'react-tinder-card';
 
     const [people, setpeople] = useState([
     
-        {
-            name:'Elon Musk',
-            url:'https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2019/07/elon-musk.jpg?itok=8tWjadE3',
+        useEffect(() => {
+       async function fetchData(){
+            const req = await axios.get('/tinder/cards');
+             setpeople(req.data);
+       }
+        fetchData();
 
-        },
-        {
-            name:'Jeff Bezos',
-            url:'https://cdn.forbes.com.mx/2020/08/Jeff-Bezos-amazon-acciones-640x360.jpg',
-
-        },
-        {
-            name:'Bill Gates',
-            url:'https://www.eldigitalcastillalamancha.es/images/carpeta_relacionados/2020/09/17/156620_bill.gates.jpg',
-
-        },
+    }, [])
 
     ]);
 
